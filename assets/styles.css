@@ -247,7 +247,41 @@ table {
   display: none;
 }
 
-/* Responsive : */
+.empire {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 671px) {
 
@@ -256,16 +290,19 @@ table {
     position: relative;
   }
 
+  .logotitre {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+
   .titre {
     display: block;
     margin: 0 auto;
     text-align: center;
     font-size: 1.5rem;
     color: #fafafa;
-  }
-
-  .logo {
-    margin: 0 auto;
   }
 
   /* Hamburger */
@@ -338,7 +375,7 @@ table {
   }
 
   .deezcord {
-    margin-left: 0;
+    justify-self: end;
   }
 
   .textdeez {
@@ -356,5 +393,21 @@ table {
 
   .deezcord a:hover {
     color: #54b3d6;
+  }
+
+  .empire {
+    display: block;
+    margin-right: auto;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fafafa;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 410px) {
+  .empire {
+    display: none;
   }
 }
