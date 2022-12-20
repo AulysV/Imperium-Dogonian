@@ -187,21 +187,37 @@ code {
 
 /* Put the deez button at the end of the flex */
 
-.deez {
-  display: flex;
+.deezcord {
+  margin-left: auto;
   list-style: none;
   text-decoration: none;
   color: white;
   padding: 0;
 }
 
-.deez a {
+.deezcord a {
   text-decoration: none;
   color: #eeeeee;
 }
 
-.deez a:hover {
-  color: #54b3d6;
+.linkdeez {
+  display: flex;
+  align-items: center;
+}
+
+.linkdeez i {
+  display: none;
+}
+
+.textdeez {
+  margin-left: 10px;
+  border-radius: 7px;
+  background-color: #048abb46;
+  padding: 10px 10px;
+}
+
+.textdeez:hover {
+  background-color: #048abb7a;
 }
 
 input,
@@ -233,7 +249,7 @@ table {
 
 /* Responsive : */
 
-@media (max-width: 555px) {
+@media (max-width: 671px) {
 
   /* Create a side .navibar */
   .header {
@@ -319,5 +335,26 @@ table {
 
   .open {
     transform: translate(0%);
+  }
+
+  .deezcord {
+    margin-left: 0;
+  }
+
+  .textdeez {
+    display: none;
+  }
+
+  .linkdeez i {
+    display: block;
+  }
+
+  .deezcord a {
+    text-decoration: none;
+    color: #eeeeee;
+  }
+
+  .deezcord a:hover {
+    color: #54b3d6;
   }
 }
