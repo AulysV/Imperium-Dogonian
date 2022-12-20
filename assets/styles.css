@@ -214,7 +214,7 @@ table {
 
 .logo {
   margin-right: 0.5em;
-  background: url("/assets/images/logo.gif");
+  background: url("assets/images/logo.gif");
   width: 60px;
   height: 60px;
   background-size: contain;
