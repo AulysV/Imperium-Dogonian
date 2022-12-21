@@ -44,13 +44,73 @@
 
       <div class="body">
 
-         <h1>Ceci est le site de l'Empire</h1>
+         <h1>Imperium Dogonain</h1>
+
+         <div class="acc">C'est quoi ?</div>
+         <div class="boxx">
+
+            <p>
+               L'Imperium Dogonian, aussi appelé Empire de Dogoni, est la seule et unique puissance de l'Univers, et ce,
+               dans tous les domaines réels et complexes.
+            </p>
+            <p>
+               L'Empereur Dogoni est l'entité suprême, réunissant toutes les qualités. Il est connu pour sa
+               détermination et sa volonté de fer, qui lui ont permis de maintenir l'ordre et l'autorité au sein de son
+               royaume.
+            </p>
+            <p>
+               En tant qu'Empereur suprême, Dogoni a les pleins pouvoirs sur l'Univers entier, et sa parole est
+               considérée comme absolue. Il s'entoure également de
+               conseillers et de ministres qui l'assistent dans la
+               gestion de son royaume et dans la prise de décisions importantes.
+            </p>
+            <p>
+               Malgré son autorité absolue, l'Empereur Dogoni est également considéré comme un souverain juste et
+               équitable, qui
+               s'efforce de protéger ses sujets et de maintenir la paix dans son royaume. C'est pour cette raison que
+               les habitants du
+               lycée Evariste Galois et de ses fiefs lui sont loyaux et le respectent, même s'il est parfois obligé de
+               faire preuve de
+               fermeté pour maintenir l'ordre et l'autorité.
+            </p>
+         </div>
+         <div class="acc">Question 2</div>
+         <div class="boxx">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptate sit aperiam iure nisi a
+               natus temporibus dignissimos quam pariatur deleniti inventore at similique provident? Pariatur optio
+               numquam quod impedit minus ipsum ea, odio quaerat sit veniam provident mollitia, facere quisquam quo
+               recusandae ad. Error ipsum nam a commodi doloremque eius animi! Voluptatem in recusandae molestiae ipsum
+               fugit ut quod. Blanditiis laborum quae id obcaecati assumenda ut, fuga expedita voluptatum dolore, maxime
+               enim veritatis excepturi suscipit velit quos praesentium repellendus consequuntur minima incidunt! Id
+               dolor, nihil reiciendis harum ab unde ipsum et quod nobis, eligendi quia veniam, vel perferendis
+               dignissimos reprehenderit nulla illum rerum enim aspernatur voluptate. Nihil est earum aspernatur quasi
+               ex minima velit nemo vitae, atque alias nobis perspiciatis qui recusandae vero modi necessitatibus
+               laudantium ratione, dignissimos reprehenderit quaerat impedit. Suscipit ut id, ducimus illo unde possimus
+               aliquid cupiditate quasi quos reprehenderit, fugiat ea atque corporis non nulla.
+            </p>
+         </div>
 
       </div>
    </div>
 
 
-   <script></script>
+   <script>
+      var acc = document.getElementsByClassName("acc");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+               panel.style.maxHeight = null;
+            } else {
+               panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+         });
+      }
+   </script>
    <script src="assets/main.js"></script>
    <script src="https://kit.fontawesome.com/860564bccc.js" crossorigin="anonymous"></script>
 

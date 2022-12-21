@@ -13,6 +13,7 @@
 html {
   --bg: #0c1016;
   --bg-cont: #13181f;
+  --bg-box: #1e324b4d;
   --h4: #ed6a5a;
 }
 
@@ -42,6 +43,7 @@ h1,
 h2,
 h3,
 p,
+.acc,
 li {
   color: #fff;
 }
@@ -121,7 +123,7 @@ code {
 
 .nav .active {
   text-decoration: none;
-  color: #54b3d6;
+  color: var(--h4);
 }
 
 .nav a {
@@ -139,7 +141,7 @@ code {
 }
 
 .nav a::before {
-  background-color: #54b3d6;
+  background-color: var(--h4);
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -154,7 +156,7 @@ code {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #54b3d6;
+  color: var(--h4);
 }
 
 .nav a:hover::before {
@@ -212,12 +214,13 @@ code {
 .textdeez {
   margin-left: 10px;
   border-radius: 7px;
-  background-color: #048abb46;
+  background-color: var(--bg-box);
   padding: 10px 10px;
+  transition: 0.2s;
 }
 
 .textdeez:hover {
-  background-color: #048abb7a;
+  background-color: #083a5c;
 }
 
 input,
@@ -251,6 +254,38 @@ ul {
   display: none;
 }
 
+.boxx {
+  background-color: var(--bg-box);
+  border-radius: 6px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 0.4em;
+}
+
+.acc {
+  padding: 0.4em;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
+  background-color: var(--bg-box);
+  border-radius: 6px;
+  padding: 1em;
+  color: var(--h4);
+  transition: 0.2s;
+  margin-top: 1.3em;
+
+}
+
+.acc:hover {
+  background-color: #083a5c;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
 
 
 
@@ -392,7 +427,7 @@ ul {
   }
 
   .deezcord a:hover {
-    color: #54b3d6;
+    color: var(--h4);
   }
 
   .empire {
