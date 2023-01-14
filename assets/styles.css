@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:wght@600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 *,
 ::before,
@@ -45,7 +45,7 @@ h3,
 p,
 .acc,
 li {
-  color: #fff;
+  color: #d1d1d1;
 }
 
 h3 {
@@ -288,10 +288,19 @@ p {
 }
 
 .vocabul {
-  margin: 1em 2em 1em;
+  margin: 1em 2.5em 1em;
 }
 
+ol {
+  margin-left: 2.5em;
+  line-height: 2;
+}
 
+.plan {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
 
 
 
@@ -442,6 +451,11 @@ p {
     font-size: 1.5rem;
     color: #fafafa;
     font-size: medium;
+  }
+
+  ol {
+    margin-left: 1.5em;
+    line-height: 1.7;
   }
 }
 
