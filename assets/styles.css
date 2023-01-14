@@ -284,7 +284,6 @@ ul {
 
 p {
   line-height: 1.7;
-  margin-bottom: 10px;
 }
 
 .vocabul {
@@ -299,11 +298,63 @@ ol {
 .plan {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  margin-left: 1em;
+  margin-left: 2.5em;
+}
+
+.bouton {
+  display: block;
+  border-radius: 7px;
+  background-color: var(--bg-box);
+  padding: 1em;
+  transition: 0.2s;
+  margin: 1em
+}
+
+.bouton:hover {
+  background-color: #083a5c;
+}
+
+.boutonlien,
+.boutonlien:visited,
+.boutonlien:active {
+  text-decoration: none;
+  color: #eeeeee;
 }
 
 
+.box {
+  background-color: var(--bg-box);
+  border-radius: 6px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
 
+.box p {
+  font-style: italic;
+  margin: 0;
+}
+
+.box .person,
+.box .ou {
+  font-style: normal;
+  text-align: right;
+}
+
+.box .ou {
+  text-decoration: underline;
+}
+
+.box .person {
+  margin-top: auto;
+}
+
+.citations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1em;
+  margin: 1em;
+}
 
 
 
