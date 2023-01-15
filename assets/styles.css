@@ -345,6 +345,14 @@ ol {
   flex-direction: column;
 }
 
+.box {
+  background-color: var(--bg-box);
+  border-radius: 6px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
 .box p {
   font-style: italic;
   margin: 0;
@@ -404,6 +412,8 @@ ol {
 
 .landingcontent {
   width: 80vw;
+  height: 80vh;
+  padding-top: 3em;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -428,7 +438,15 @@ ol {
   color: var(--h4);
 }
 
-
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7em;
+  background-color: var(--bg-box);
+  border-radius: 6px;
+  margin-top: 3em;
+}
 
 
 
@@ -528,7 +546,8 @@ ol {
     background: var(--bg);
     top: 120%;
     left: 0;
-    width: 100%;
+    width: 80vw;
+    height: 80vh;
     transform: translate(-120%);
     padding: 1.3em;
   }
@@ -603,6 +622,7 @@ ol {
   }
 
   .landingcontent {
+    height: auto;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
