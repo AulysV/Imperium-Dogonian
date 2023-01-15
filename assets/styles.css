@@ -41,6 +41,12 @@ p {
   margin: 1em;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
 h1,
 h2,
 h3,
@@ -304,19 +310,6 @@ ol {
   margin-left: 2.5em;
 }
 
-.boutonp {
-  display: block;
-  border-radius: 7px;
-  background-color: var(--bg-box);
-  padding: 1em;
-  transition: 0.2s;
-  margin: 1em
-}
-
-.boutonp:hover {
-  background-color: #083a5c;
-}
-
 .boutonlien,
 .boutonlien:visited,
 .boutonlien:active {
@@ -325,7 +318,7 @@ ol {
 }
 
 .bouton {
-  margin: 0;
+  margin-bottom: 1em;
   border-radius: 7px;
   background-color: var(--bg-box);
   padding: 10px 15px;
@@ -447,6 +440,51 @@ ol {
   border-radius: 6px;
   margin-top: 3em;
 }
+
+.dms {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.dms i {
+  color: #d1d1d1;
+  margin-right: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
