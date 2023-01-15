@@ -442,7 +442,6 @@ ol {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.7em;
   background-color: var(--bg-box);
   border-radius: 6px;
   margin-top: 3em;
