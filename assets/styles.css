@@ -11,6 +11,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   --bg: #0c1016;
   --bg-cont: #13181f;
   --bg-box: #1e324b4d;
@@ -80,6 +81,7 @@ code {
 .header,
 .sidebar,
 .body {
+  scroll-behavior: smooth;
   padding: 1.3em;
   background: var(--bg-cont);
   border-radius: 6px;
@@ -301,7 +303,7 @@ ol {
   margin-left: 2.5em;
 }
 
-.bouton {
+.boutonp {
   display: block;
   border-radius: 7px;
   background-color: var(--bg-box);
@@ -310,7 +312,7 @@ ol {
   margin: 1em
 }
 
-.bouton:hover {
+.boutonp:hover {
   background-color: #083a5c;
 }
 
@@ -321,8 +323,21 @@ ol {
   color: #eeeeee;
 }
 
+.bouton {
+  margin: 0;
+  border-radius: 7px;
+  background-color: var(--bg-box);
+  padding: 10px 15px;
+  transition: 0.2s;
+  display: block;
+  width: fit-content;
+}
 
-.box {
+.bouton:hover {
+  background-color: #083a5c;
+}
+
+.bouton .box {
   background-color: var(--bg-box);
   border-radius: 6px;
   padding: 1em;
@@ -356,9 +371,62 @@ ol {
   margin: 1em;
 }
 
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - (1.3em * 5));
+}
 
+.landingimg {
+  height: 10em;
+  width: auto;
+}
 
+.landingh1 {
+  font-size: 3em;
+  margin: 0;
+}
 
+.landinglienparent {
+  display: flex;
+}
+
+.landinglien {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.landinglienparentmq {
+  display: none;
+}
+
+.landingcontent {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5em;
+  grid-row-gap: 5em;
+}
+
+.landingcontent div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landingcontent div i {
+  color: #d1d1d1;
+  transition: 0.2s;
+  font-size: 3em;
+}
+
+.landingcontent div i:hover {
+  color: var(--h4);
+}
 
 
 
@@ -507,6 +575,39 @@ ol {
   ol {
     margin-left: 1.5em;
     line-height: 1.7;
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - (1.3em * 5));
+  }
+
+  .landing h1 {
+    text-align: center;
+  }
+
+  .landinglienparent {
+    display: none;
+  }
+
+  .landinglienparentmq {
+    display: flex;
+  }
+
+  .landinglienmq {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .landingcontent {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 5em;
   }
 }
 
