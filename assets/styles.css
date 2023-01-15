@@ -310,12 +310,6 @@ ol {
   margin-left: 2.5em;
 }
 
-.boutonlien,
-.boutonlien:visited,
-.boutonlien:active {
-  text-decoration: none;
-  color: #eeeeee;
-}
 
 .bouton {
   margin-bottom: 1em;
@@ -447,7 +441,7 @@ ol {
   margin-left: 1em;
 }
 
-.dms i {
+.bouton i {
   color: #d1d1d1;
   margin-right: 7px;
 }
