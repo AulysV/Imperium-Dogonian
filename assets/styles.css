@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:wght@600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
 *,
 ::before,
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: Inter, "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   /* background-image: url("/assets/images/bg.jpg"); */
   background-position: center center;
@@ -30,6 +30,7 @@ body {
 
 h1 {
   margin: 0.5em;
+  font-family: "Open Sans", "Poppins", "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 h2,
