@@ -36,3 +36,17 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".landing").forEach(function (box) {
+  box.addEventListener("click", function () {
+    gsap.to(".landing", {
+      duration: 0.5,
+      opacity: 0,
+      y: -100,
+      stagger: 0.1,
+      ease: "back.in",
+    });
+  });
+});

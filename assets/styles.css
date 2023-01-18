@@ -447,10 +447,11 @@ ol {
   margin-right: 7px;
 }
 
-
-
-
-
+.markerdiv {
+  height: 20px;
+  width: 100%;
+  background-color: #ed6a5a;
+}
 
 
 
