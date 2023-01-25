@@ -591,9 +591,10 @@ ol {
     top: 120%;
     left: 0;
     width: 80vw;
-    height: 80vh;
+    height: 85vh;
     transform: translate(-120%);
     padding: 1.3em;
+    z-index: 1;
   }
 
   .nav li {
@@ -646,6 +647,7 @@ ol {
     align-items: center;
     justify-content: center;
     height: calc(100vh - (1.3em * 5));
+    z-index: 0;
   }
 
   .landing h1 {
