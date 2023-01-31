@@ -710,6 +710,22 @@ ol {
     display: none;
   }
 
+  .header,
+  .sidebar,
+  .body {
+    padding: 0.5em;
+    background: var(--bg-cont);
+    border-radius: 6px;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0.6em;
+  }
+
   .parent {
     padding: 0.5em;
     grid-column-gap: 0.5em;
