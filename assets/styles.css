@@ -606,10 +606,10 @@ ol {
     align-items: flex-start;
     position: absolute;
     background: var(--bg);
-    top: 120%;
+    top: 100%;
     left: 0;
     width: 80vw;
-    height: 85vh;
+    height: 90vh;
     transform: translate(-120%);
     padding: 1.3em;
     z-index: 1;
@@ -706,7 +706,7 @@ ol {
 }
 
 @media (max-width: 410px) {
-  .empire {
+  .logo {
     display: none;
   }
 
