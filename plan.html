@@ -46,11 +46,23 @@
 
             <h1>Plan du cours</h1>
 
-            <div class="bouton"><i class="fa-solid fa-download"></i><a href="assets/dms/Plan.docx"
-                    download="plan_cours_philo.docx">Télécharger le fichier
-                    Word</a></div>
+            <p>
+                Quelques oublis exceptés, le cours de philo est très organisé, à partir du moment où on arrive à trouver
+                le plan qui se cache derrière un cours que l'on pourrait trouver désordonné à première vue. <br>
+                Flemme ? Je suis là pour ça
+            </p>
 
-            <h3>I. Eudémonologie, conceptions du bonheur</h3>
+            <p>
+                Le cours suit un odre chronologique : le prof part des Présocratiques, et avance dans le temps :
+                Socrate, Platon, Sophistes, Aristote, Epicure/Lucrèce, ...
+            </p>
+
+            <p>
+                En partant de ces philosophes, il nous créée un cours, qui abordes plusieurs thèmes et domaines
+                reccurents :
+                Métaphysique, Eudémonologie, Existentialisme, Essentialisme, Philosophie de la technique, Philosophie de
+                l'éducation, illusions, ...
+            </p>
 
             <div class="acc">Philosophes</div>
             <div class="boxx">
@@ -63,7 +75,7 @@
                     </li>
                     <li>Platon
                         <ol type="a">
-                            <li>La République
+                            <li>La République livre 7
                                 <ol type="i">
                                     <li>Intro</li>
                                     <li>Des prisonniers
@@ -87,6 +99,49 @@
                                     </li>
                                 </ol>
                             </li>
+
+                            <li>La République livre 9
+                                <ol type="i">
+                                    <li>Dichotomies → cours
+                                        <ol type="1">
+                                            <li>Plaisirs naturels & non naturels</li>
+                                            <li>Parmi les plaisirs non naturels : plaisirs légitimes & illégitimes </li>
+                                            <p>→ Parallélisme avec les types de cités</p>
+                                        </ol>
+                                    </li>
+                                    <li>Association entre individu et cité → cours
+                                        <ol type="1">
+                                            <li>Citation du cours : Ne crois tu pas que ce qui est écrit en petit dans
+                                                l'individu est écrit en grand dans la cité ?
+                                            <li>Hegel : refus d'isoler l'Idiotès (l'individu)</li>
+                                        </ol>
+                                    </li>
+                                    <li>Association entre individu et cité → cours
+                                        <ol type="1">
+                                            <li>Citation du cours : Ne crois tu pas que ce qui est écrit en petit dans
+                                                l'individu est écrit en grand dans la cité ?
+                                            <li>Hegel : refus d'isoler l'Idiotès (l'individu)</li>
+                                            <li>Marx, division du travail → cours</li>
+                                            <li>Oikeiosis, inégalité des aptitudes → cours</li>
+                                        </ol>
+                                    </li>
+                                    <li>Trichotomie de l'âme → Trichotomie des cités
+                                        <ol type="1">
+                                            <li>Cité naturelle, primitive</li>
+                                            <li>Cité de l'agréable</li>
+                                            <li>Presque-cité tyrannique (le prof l'a zappé...)</li>
+                                        </ol>
+                                    </li>
+                                    <li>Tripartition de l'âme → Tripartition des cités
+                                        <ol type="1">
+                                            <li>Noûs (âme, raison) → Chefs</li>
+                                            <li>Thumos (i(r)rascible) → Soldats, gardiens</li>
+                                            <li>Epithumia (partie délirante) → Producteurs</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+
                             <li>Le Procès de Socrate
                                 <ol type="i">
                                     <li>Socrate accusé → cours</li>
@@ -180,7 +235,53 @@
                 </ol>
             </div>
 
-            <h3>II. Lorem ipsum dolor sit</h3>
+            <!-- C'est normal si le code en dessous est dégeu -->
+
+            <div class="diagram">
+                <pre class="mermaid">
+
+%%{init: {'theme':'dark'}}%%
+
+graph LR
+    A[Philosophes]
+    A --> S[Socrate]
+    A --> P[Platon]
+    A --> AR[Aristote]
+
+    S --> Maïeutique
+
+    P --> R1[République Livre 7]
+    P --> R2[République Livre 9]
+    P --> PS[Procès de Socrate]
+    P --> PR[Protagoras]
+
+    R1 --> AC[Allégorie de la Caverne]
+    R2 --> DC[Désirs et Cités]
+    PS --> OP[Oracle, Piété]
+    PR --> TFA[Technique, finalité, auto-organisation]
+
+    AR --> BB[Bac Blanc]
+
+
+    B[Non-philosophes]
+    B --> SO[Sophistes]
+    B --> DO[Doxa]
+    B --> R[Religion]
+    B --> PRS[Présocratiques]
+
+    SO --> ER[Experts, rhétorique]
+    DO --> AG[Agatha]
+    R --> BHP[Bonheur possible]
+    R --> BHI[Bonheur impossible]
+    PRS --> SS[Sept sages]
+    PRS --> AT[Atomistes]
+    PRS --> X[Xénophane]
+
+
+
+                </pre>
+            </div>
+
 
         </div>
     </div>
@@ -188,6 +289,16 @@
 
     <script></script>
     <script src="assets/main.js"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+        mermaidAPI.initialize({
+            securityLevel: 'loose',
+            theme: 'dark',
+        });
+    </script>
     <script src="https://kit.fontawesome.com/860564bccc.js" crossorigin="anonymous"></script>
 
 </body>

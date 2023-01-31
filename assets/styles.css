@@ -25,7 +25,6 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  scroll-behavior: smooth;
 }
 
 h1 {
@@ -88,7 +87,6 @@ code {
 .header,
 .sidebar,
 .body {
-  scroll-behavior: smooth;
   padding: 1.3em;
   background: var(--bg-cont);
   border-radius: 6px;
@@ -241,10 +239,10 @@ table {
 }
 
 .logo {
-  margin-right: 0.5em;
-  background: url("images/logo.gif");
-  width: 60px;
-  height: 60px;
+  margin-right: 1em;
+  background: url("images/logotg1.png");
+  width: 42px;
+  height: 42px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -463,6 +461,16 @@ ol {
   color: var(--h4);
   text-decoration: none;
   transition: 0.2s;
+}
+
+.mermaid {
+  margin-top: 3em;
+}
+
+.diagram {
+  overflow-x: 500vw;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 
