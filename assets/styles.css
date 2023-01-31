@@ -21,7 +21,6 @@ html {
 body {
   font-family: Inter, "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
   background-color: var(--bg);
-  /* background-image: url("/assets/images/bg.jpg"); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
