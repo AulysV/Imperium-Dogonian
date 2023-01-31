@@ -668,6 +668,11 @@ ol {
     z-index: 0;
   }
 
+  .landingimg {
+    height: 8em;
+    width: auto;
+  }
+
   .landing h1 {
     text-align: center;
   }
