@@ -80,8 +80,8 @@ code {
   width: 100vw;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 60px auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 1.3em;
+  grid-row-gap: 1.3em;
 }
 
 .header,
@@ -473,17 +473,18 @@ ol {
   white-space: nowrap;
 }
 
-
 .cartesmentales {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 1em;
-}
-
-
-.figma>iframe {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
+
+.figma>iframe {
+  margin: 1em;
+  width: 40vw;
+}
+
+
 
 
 
@@ -692,10 +693,26 @@ ol {
     grid-column-gap: 2em;
     grid-row-gap: 5em;
   }
+
+  .cartesmentales {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figma>iframe {
+    margin: 0.5em;
+    width: 100%;
+  }
 }
 
 @media (max-width: 410px) {
   .empire {
     display: none;
+  }
+
+  .parent {
+    padding: 0.5em;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
   }
 }
