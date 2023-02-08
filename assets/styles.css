@@ -16,6 +16,7 @@ html {
   --bg-cont: #13181f;
   --bg-box: #1e324b4d;
   --h4: #ed6a5a;
+  --hoverbox: #161f2bf3;
 }
 
 body {
@@ -126,6 +127,41 @@ code {
   text-decoration: none;
   color: #eeeeee;
 }
+
+.nav li ul {
+  display: none;
+}
+
+.dropdownbox {
+  display: block;
+  position: absolute;
+  background-color: var(--hoverbox);
+  border-radius: 6px;
+  margin-left: -1.3em;
+}
+
+.nav li:hover ul {
+  display: block;
+}
+
+.dropdownbox li {
+  list-style: none;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav .active {
   text-decoration: none;
@@ -529,6 +565,77 @@ ol {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 671px) {
 
   /* Create a side .navibar */
@@ -616,6 +723,10 @@ ol {
 
   .nav li {
     margin-bottom: 1.3em;
+  }
+
+  .dropdownbox {
+    display: none;
   }
 
   .open {
@@ -722,6 +833,7 @@ ol {
     border-radius: 6px;
   }
 
+
   h2,
   h3,
   h4,
@@ -734,5 +846,13 @@ ol {
     padding: 0.5em;
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em;
+  }
+
+  .dropdownbox {
+    display: none;
+  }
+
+  .header button {
+    margin-left: 1em;
   }
 }

@@ -28,7 +28,17 @@
                 <li>
                     <a href="index.html" class="active" aria-label="visit homepage" aria-current="page">Accueil</a>
                 </li>
-                <li><a href="philo.html">Philo</a></li>
+                <li>
+               <a href="philo.html">Philo</a>
+               <div class="dropdownbox">
+                  <ul>
+                     <li><a href="plan.html">Plan cours</a></li>
+                     <li><a href="vocabulaire.html">Liste vocabulaire</a></li>
+                     <li><a href="citations.html">Citations</a></li>
+                     <li><a href="fichiers.html">Liste DMs</a></li>
+                  </ul>
+               </div>
+            </li>
                 <li><a href="physique.html">Physique</a></li>
                 <li><a href="refs.html">Refs</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -294,6 +304,7 @@ graph LR
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
         mermaid.initialize({ startOnLoad: true });
     </script>
+
     <script>
         mermaidAPI.initialize({
             securityLevel: 'loose',
