@@ -29,17 +29,18 @@
                     <a href="index.html" class="active" aria-label="visit homepage" aria-current="page">Accueil</a>
                 </li>
                 <li>
-               <a href="philo.html">Philo</a>
-               <div class="dropdownbox">
-                  <ul>
-                     <li><a href="plan.html">Plan cours</a></li>
-                     <li><a href="vocabulaire.html">Liste vocabulaire</a></li>
-                     <li><a href="citations.html">Citations</a></li>
-                     <li><a href="fichiers.html">Liste DMs</a></li>
-                  </ul>
-               </div>
-            </li>
+                    <a href="philo.html">Philo</a>
+                    <div class="dropdownbox">
+                        <ul>
+                            <li><a href="plan.html">Plan cours</a></li>
+                            <li><a href="vocabulaire.html">Liste vocabulaire</a></li>
+                            <li><a href="citations.html">Citations</a></li>
+                            <li><a href="fichiers.html">Liste DMs</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="physique.html">Physique</a></li>
+                <li><a href="maths.html">Maths</a></li>
                 <li><a href="refs.html">Refs</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </nav>
@@ -69,11 +70,13 @@
             </p>
 
             <p>
-                En partant de ces philosophes, il nous créée un cours, qui abordes plusieurs thèmes et domaines
+                En partant de ces philosophes, il nous crée un cours, qui abordes plusieurs thèmes et domaines
                 reccurents :
                 Métaphysique, Eudémonologie, Existentialisme, Essentialisme, Philosophie de la technique, Philosophie de
                 l'éducation, illusions, ...
             </p>
+
+            <p><em>Mis à jour le 18/01 </em></p>
 
             <div class="acc">Philosophes</div>
             <div class="boxx">
@@ -194,7 +197,6 @@
             </div>
 
             <div class="acc">Non-philosophes</div>
-
             <div class="boxx">
                 <ol type="1" class="plan">
                     <li>Sophistes → cours
@@ -246,6 +248,87 @@
                 </ol>
             </div>
 
+            <div class="acc">Méthodologie de la dissert</div>
+            <div class="boxx">
+                <ol type="1" class="plan">
+                    <li>Intro :
+                        <ol type="a">
+                            <li>1ère phrase
+                                <ol type="i">
+                                    <li>Présentation de la « Question initiale » (sujet)</li>
+                                    <li>Question préalables, destinées à éclairer la principale (se basant sur l'opinion
+                                        générale fausse/imprécise)</li>
+                                </ol>
+                            </li>
+                            <li>Définition des termes du sujet</li>
+                            <li>Plan + problématique</li>
+                        </ol>
+                    </li>
+                    <li>Développement
+                        <ol type="a">
+                            <li>??</li>
+                        </ol>
+                    </li>
+                    <li>Conclusion
+                        <ol type="a">
+                            <li>??</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="acc">Apartés</div>
+            <div class="boxx">
+                <ol type="1" class="plan">
+                    <li>Les illusions
+                        <ol type="a">
+                            <li>...</li>
+                            <li>...</li>
+                        </ol>
+                    </li>
+                    <li>La technique
+                        <ol type="a">
+                            <li>...</li>
+                            <li>...</li>
+                        </ol>
+                    </li>
+                    <li>La vérité
+                        <ol type="a">
+                            <li>La vérité et les moeurs
+                                <ol type="i">
+                                    <li>Nietzsche et la Sittlichkeit</li>
+                                    <li>Hegel et la Moralität (prononcer "Moralitête")</li>
+                                </ol>
+                            </li>
+                            <li>Les cinq concepts de la vérité
+                                <ol type="i">
+                                    <li>...</li>
+                                    <li>...</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Les erreurs de Descartes
+                        <ol type="a">
+                            <li>Erreur par inattention</li>
+                            <li>Erreur par prévention</li>
+                        </ol>
+                    </li>
+                    <li>Les visions du monde (Antiquité)
+                        <ol type="a">
+                            <li>Vision humaine</li>
+                            <li>Vision divine</li>
+                        </ol>
+                    </li>
+                    <li>...
+                        <ol type="a">
+                            <li>...</li>
+                            <li>...</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
             <!-- C'est normal si le code en dessous est dégeu -->
 
             <div class="diagram">
@@ -288,7 +371,27 @@ graph LR
     PRS --> AT[Atomistes]
     PRS --> X[Xénophane]
 
+    C[Apartés]
+    C --> IL[Illusions]
+    C --> TE[Technique]
+    C --> VE[Vérité]
+    C --> ED[Erreurs de Descartes]
+    C --> VDM[Vision du monde, antiquité]
 
+
+    IL --> I1[...]
+
+    TE --> T1[Technique et moeurs]
+    TE --> T2[Technique et vérité]
+    
+    VE --> V1[Vérité et moeurs]
+    VE --> V2[Les cinq concepts de la vérité]
+
+    ED --> E1[Erreur par inattention]
+    ED --> E2[Erreur par prévention]
+
+    VDM --> VDM1[Vision humaine]
+    VDM --> VDM2[Vision divine]
 
                 </pre>
             </div>

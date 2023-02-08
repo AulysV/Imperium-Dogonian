@@ -73,6 +73,15 @@ code {
   padding: 0.1em 0.65em;
 }
 
+a.lien {
+  text-decoration: underline;
+}
+
+a.lien:hover {
+  text-decoration: none;
+}
+
+
 .parent {
   display: grid;
   padding: 1.3em;
@@ -149,18 +158,6 @@ code {
   margin-top: 0.4em;
   margin-bottom: 0.4em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .nav .active {
