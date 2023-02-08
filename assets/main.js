@@ -37,6 +37,21 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+var acc2 = document.getElementsByClassName("lienf2");
+var i;
+
+for (i = 0; i < acc2.length; i++) {
+  acc2[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.querySelectorAll(".landing").forEach(function (box) {
