@@ -533,15 +533,20 @@ ol {
   white-space: nowrap;
 }
 
-.cartesmentales {
+/* .cartesmentales {
   display: flex;
   justify-content: center;
   width: 100%;
-}
+} */
 
 .figma>iframe {
   margin: 1em;
-  width: 40vw;
+  width: 90%;
+}
+
+.boxx > img {
+  max-width: 100%;
+  max-height: auto;
 }
 
 /* The Modal (background) */
