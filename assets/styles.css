@@ -544,7 +544,7 @@ ol {
   width: 100%;
 }
 
-.boxx > img {
+.boxx>img {
   max-width: 100%;
   max-height: auto;
 }
@@ -592,7 +592,19 @@ ol {
   cursor: pointer;
 }
 
+.mcimg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+.mcimg img {
+  width: 80vw;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 1.5em;
+}
 
 
 
