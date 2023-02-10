@@ -539,14 +539,18 @@ ol {
   width: 100%;
 } */
 
+
 .figma>iframe {
-  margin: 1em;
-  width: 90%;
+  width: 100%;
 }
 
 .boxx > img {
   max-width: 100%;
   max-height: auto;
+}
+
+.boxx .bouton {
+  margin: 1em;
 }
 
 /* The Modal (background) */
