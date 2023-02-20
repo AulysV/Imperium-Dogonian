@@ -12,12 +12,34 @@
 
 html {
   scroll-behavior: smooth;
-  --bg: #0c1016;
-  --bg-cont: #13181f;
-  --bg-box: #1e324b4d;
-  --h4: #ed6a5a;
-  --hoverbox: #161f2bf3;
 }
+
+
+:root {
+  /* Thème clair */
+  --text: #202020;
+  --bg: #f1f1f1;
+  --bg-cont: #ffffff;
+  --bg-box: #f1f1f1;
+  --h4: #ed6a5a;
+  --hoverbox: #eeeeee;
+  --hover: #dfdfdf;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* Thème sombre */
+  :root {
+    --text: #f1f1f1;
+    --bg: #0c1016;
+    --bg-cont: #13181f;
+    --bg-box: #1e324b4d;
+    --h4: #ed6a5a;
+    --hoverbox: #161f2bf3;
+    --hover: #083a5c;
+  }
+}
+
 
 body {
   font-family: Inter, "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -43,7 +65,7 @@ p {
 a,
 a:visited {
   text-decoration: none;
-  color: #d1d1d1;
+  color: var(--text);
 }
 
 h1,
@@ -52,7 +74,7 @@ h3,
 p,
 .acc,
 li {
-  color: #d1d1d1;
+  color: var(--text);
 }
 
 h3 {
@@ -145,7 +167,7 @@ code {
 .nav li p {
   margin-right: 1.3em;
   text-decoration: none;
-  color: #eeeeee;
+  color: var(--text);
 }
 
 .nav li ul {
@@ -243,13 +265,13 @@ code {
   margin-left: auto;
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: var(--text);
   padding: 0;
 }
 
 .deezcord a {
   text-decoration: none;
-  color: #eeeeee;
+  color: var(--text);
 }
 
 .linkdeez {
@@ -270,13 +292,13 @@ code {
 }
 
 .textdeez:hover {
-  background-color: #083a5c;
+  background-color: var(--hover);
 }
 
 input,
 label,
 table {
-  color: #fff;
+  color: var(--text);
   margin: 5px;
   margin-bottom: 5px;
 }
@@ -328,7 +350,7 @@ ul {
 }
 
 .acc:hover {
-  background-color: #083a5c;
+  background-color: var(--hover);
 }
 
 .acc2 {
@@ -346,7 +368,7 @@ ul {
 }
 
 .acc2:hover {
-  background-color: #083a5c;
+  background-color: var(--hover);
 }
 
 p {
@@ -380,7 +402,7 @@ ol {
 }
 
 .bouton:hover {
-  background-color: #083a5c;
+  background-color: var(--hover);
 }
 
 .bouton .box {
@@ -482,7 +504,7 @@ ol {
 }
 
 .landingcontent div i {
-  color: #d1d1d1;
+  color: var(--text);
   transition: 0.2s;
   font-size: 3em;
 }
@@ -507,7 +529,7 @@ ol {
 }
 
 .bouton i {
-  color: #d1d1d1;
+  color: var(--text);
   margin-right: 7px;
 }
 
