@@ -61,10 +61,18 @@
 
          <h1>Physique</h1>
 
-         <p><em>Le chargement peut être long, et voir les cartes mentales sur PC est conseillé</em></p>
+         <div class="acc">Liste des cours</div>
+         <div class="boxx">
+            <iframe class="pdfI" src="assets/pdfjs/web/viewer.html?file=/assets/physique/cours.pdf"></iframe>
+         </div>
 
-         <span class="bouton"><a href="assets/physique/cours.pdf" target="_blank">Voir la liste des
-               cours</a></span>
+         <div class="acc">Fiches de révision</div>
+         <div class="boxx">
+            <div class="pdfViewer">
+               <iframe class="pdfI" src="assets/pdfjs/web/viewer.html?file=/assets/physique/listefiches.pdf"></iframe>
+            </div>
+         </div>
+
 
          <div class="cartesmentales">
             <div class="acc">Chapitre 1 : Acides/Bases</div>
@@ -74,12 +82,7 @@
                <span class="bouton"><a href="assets/physique/tp1.pdf" target="_blank">Voir le TP</a></span>
                <span class="bouton"><a href="assets/physique/tp1c.pdf" target="_blank">Voir corrigé du TP</a></span>
 
-               <div class="figma" id="C1">
-                  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fe24yaEAInINfJAeMgtA3hR%2FChapitre-1%3Fnode-id%3D0%253A1%26t%3DmVMMfFVPXignSca3-1"
-                     allowfullscreen></iframe>
-               </div>
-
+               <!-- PDF.js View pdf located in assets/physique/cours.pdf -->
 
 
             </div>
@@ -90,12 +93,6 @@
                <span class="bouton"><a href="assets/physique/cours2.pdf" target="_blank">Voir le cours</a></span>
                <span class="bouton"><a href="assets/physique/tp2.pdf" target="_blank">Voir le TP</a></span>
                <span class="bouton"><a href="assets/physique/tp2c.pdf" target="_blank">Voir corrigé du TP</a></span>
-
-               <div class="figma" id="C2">
-                  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZfY2dr4AkwyhhMzNny2025%2FUntitled%3Fnode-id%3D1%253A186%26t%3DNxxiSV24QqpuQsM0-1"
-                     allowfullscreen></iframe>
-               </div>
 
             </div>
 
@@ -171,11 +168,7 @@
                <span class="bouton">
                   <a href="assets/images/pc/PC 10.png" target="_blank">Voir l'image</a>
                </span>
-               <div class="figma" id="C10">
-                  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPFBuR2RKEmjYROmidNZ7Pk%2FPC-10%3Fnode-id%3D0%253A1%26t%3DFTOezv3O4mUm19jf-1"
-                     allowfullscreen></iframe>
-               </div>
+
             </div>
 
             <div class="acc">Chapitre 11 : Lunette astronomique</div>
@@ -231,13 +224,24 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
    <script src="https://kit.fontawesome.com/860564bccc.js" crossorigin="anonymous"></script>
-   <script type="text/javascript" id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-      </script>
-   <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
-   </script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.3.122/build/pdf.min.js"></script> -->
+
+   <script src="assets/pdfjs/build/pdf.js"></script>
+   <script src="assets/pdfjs/build/pdf.worker.js"></script>
+
+   <!-- <script>
+      // Lorsque la page est chargée, initialiser PDF.js avec l'URL de votre PDF
+      document.addEventListener("DOMContentLoaded", function () {
+         // Obtenez l'élément div du PDF viewer
+         const viewer = document.getElementById("viewer");
+         // Définissez l'URL de votre PDF
+         const pdfUrl = "assets/physique/cours1.pdf";
+         // Initialisez PDF.js avec l'URL du PDF et l'élément du viewer
+         PDFViewerApplication.initialize({ viewerContainer: viewer, src: pdfUrl });
+      });
+   </script> -->
+
+
 
 </body>
 

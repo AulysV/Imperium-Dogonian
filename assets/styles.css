@@ -606,7 +606,17 @@ ol {
   border-radius: 1.5em;
 }
 
+.pdf-container {
+  width: 100%;
+  height: 100%;
+}
 
+.pdfI {
+  width: 100%;
+  height: calc(100vh - 5em);
+  margin: auto;
+
+}
 
 
 
