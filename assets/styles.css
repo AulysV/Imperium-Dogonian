@@ -10,7 +10,8 @@
   -ms-overflow-style: none;
 }
 
-html {
+html,
+.body {
   scroll-behavior: smooth;
 }
 
@@ -76,9 +77,6 @@ li {
   color: var(--text);
 }
 
-h3 {
-  text-decoration: underline;
-}
 
 h4 {
   font-size: 1.09rem;
@@ -467,7 +465,7 @@ ol {
   margin: 0;
 }
 
-.landinglienparent {
+#landinglienparent {
   display: flex;
 }
 
@@ -476,9 +474,11 @@ ol {
   margin-right: 0.5em;
 }
 
-.landinglienparentmq {
-  display: none;
+hr {
+  width: 50vw;
+  margin: 2em auto;
 }
+
 
 .landingcontent {
   width: 80vw;
@@ -514,6 +514,15 @@ ol {
 .landingcontent div i:hover {
   color: var(--h4);
 }
+
+/* #features {
+  margin-top: 3em;
+} */
+
+
+
+
+
 
 .footer {
   display: flex;
@@ -637,10 +646,15 @@ ol {
 
 .pdfI {
   width: 100%;
-  height: calc(100vh - 5em);
-  margin: auto;
-
+  height: calc(100vh - 15em);
 }
+
+.pdfViewer {
+  width: 80%;
+  margin: 1em auto;
+}
+
+
 
 .cmm {
   background-color: white;
@@ -966,17 +980,9 @@ ol {
     text-align: center;
   }
 
-  .landinglienparent {
-    display: none;
-  }
-
-  .landinglienparentmq {
+  #landinglienparent {
     display: flex;
-  }
-
-  .landinglienmq {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    flex-direction: column;
   }
 
   .landingcontent {
