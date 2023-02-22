@@ -31,7 +31,7 @@ body {
 }
 
 :root {
-  --text: #f1f1f1;
+  --text: #f1f1f1dc;
   --bg: #0c1016;
   --bg-cont: #13181fe7;
   --bg-box: #1e324b4d;
@@ -344,7 +344,7 @@ ul {
   background-color: var(--bg-box);
   border-radius: 6px;
   padding: 1em;
-  color: var(--h4);
+  color: var(--text);
   transition: 0.2s;
   margin-top: 1.3em;
 }
