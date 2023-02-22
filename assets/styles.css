@@ -32,13 +32,12 @@ body {
 :root {
   --text: #f1f1f1;
   --bg: #0c1016;
-  --bg-cont: #13181f;
+  --bg-cont: #13181fe7;
   --bg-box: #1e324b4d;
   --h4: #ed6a5a;
   --hoverbox: #161f2bf3;
-  --hover: #083a5c;
+  --hover: #083a5c88;
 }
-
 
 
 body {
@@ -130,9 +129,10 @@ code {
 .sidebar,
 .body {
   padding: 1.3em;
-  background: var(--bg-cont);
   border-radius: 6px;
+  background: var(--bg-cont);
 }
+
 
 .sidebar,
 .body {
@@ -170,9 +170,6 @@ code {
   color: var(--text);
 }
 
-.nav li ul {
-  display: none;
-}
 
 .dropdownbox {
   display: block;
@@ -180,6 +177,11 @@ code {
   background-color: var(--hoverbox);
   border-radius: 6px;
   margin-left: -1.3em;
+}
+
+
+.nav li ul {
+  display: none;
 }
 
 .nav li:hover ul {
