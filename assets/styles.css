@@ -666,14 +666,40 @@ hr {
   width: 100%;
 }
 
+#randomul li {
+  list-style-type: none;
+  text-decoration: none;
+  margin-bottom: 1em;
+  border-radius: 7px;
+  background-color: var(--bg-box);
+  padding: 4px 8px;
+  transition: 0.2s;
+  display: block;
+  width: fit-content;
+}
 
 
+#randomdiv {
+  position: relative;
+  width: 100%;
+  height: 400%;
+}
 
+#randomdiv ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 
-
-
-
-
+#randomdiv ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
 
 
 
