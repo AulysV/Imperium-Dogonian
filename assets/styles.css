@@ -669,20 +669,26 @@ hr {
 #randomul li {
   list-style-type: none;
   text-decoration: none;
-  margin-bottom: 1em;
   border-radius: 7px;
   background-color: var(--bg-box);
-  padding: 4px 8px;
-  transition: 0.2s;
-  display: block;
-  width: fit-content;
+  /* padding: 4px 8px; */
+  height: 100%;
+  width: 100%;
+  padding: 0.5em;
+}
+
+#randomul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
 }
 
 
-#randomdiv {
+/* #randomdiv {
   position: relative;
-  width: 100%;
-  height: 400%;
+  width: 90%;
+  height: fit-content;
 }
 
 #randomdiv ul {
@@ -699,7 +705,7 @@ hr {
   left: 0;
   top: 0;
   text-align: center;
-}
+} */
 
 
 
@@ -1028,6 +1034,11 @@ hr {
   .figma>iframe {
     margin: 0.5em;
     width: 100%;
+  }
+
+  #randomul {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
