@@ -720,6 +720,21 @@ hr {
   padding: 0.2em;
 }
 
+.lienf,
+#QCMs div a {
+  color: var(--h4);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lienf:hover,
+#QCMs div a:hover {
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 
 
