@@ -77,6 +77,11 @@ li {
   color: var(--text);
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 
 h4 {
   font-size: 1.09rem;
@@ -707,6 +712,13 @@ hr {
   text-align: center;
 } */
 
+
+#QCMs div {
+  margin: 1em;
+  background-color: var(--bg-box);
+  border-radius: 6px;
+  padding: 0.2em;
+}
 
 
 
